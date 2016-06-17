@@ -1,0 +1,7 @@
+{
+    "name": "motioneye-pb",
+    "require": {
+        "php": ">=5.3",
+        "php-curl-class/php-curl-class": "^4.10"
+    }
+}
