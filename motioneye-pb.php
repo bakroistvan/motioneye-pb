@@ -29,13 +29,13 @@ var_dump($curl->response);
 $up_req = $curl->response;
 
 
-
+$curl->setHeader('Content-Type', 'multipart/form-data');
 $curl->post($up_req['upload_url'], [
 	'file' => '@' . $image_path
 ]);
 var_dump($curl->response);
 
-
+$curl->setHeader('Content-Type', 'application/json');
 $post = [
 	'type' => 'file',
 	'file_name' => $argv[1] . '.jpg',
